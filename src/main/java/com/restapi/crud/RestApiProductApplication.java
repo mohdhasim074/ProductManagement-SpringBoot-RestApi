@@ -7,7 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestApiCrudExampleApplication implements CommandLineRunner {
+public class RestApiProductApplication implements CommandLineRunner {
 
     @Autowired
     private ProductRepository repository;
@@ -15,7 +15,7 @@ public class RestApiCrudExampleApplication implements CommandLineRunner {
     public static void main(String[] args) {
 
         System.out.println("Started...");
-        SpringApplication.run(RestApiCrudExampleApplication.class, args);
+        SpringApplication.run(RestApiProductApplication.class, args);
         System.out.println("hello 27 Jan");
         System.out.println("End...");
         int port = 8080;
